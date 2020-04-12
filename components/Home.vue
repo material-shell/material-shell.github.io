@@ -1,9 +1,9 @@
 <template>
   <div class="workspace">
-    <div class="window window-1">
-    </div>
-    <div class="window window-2"></div>
-    <div class="window window-3"></div>
+    <v-card class="window window-1">
+    </v-card>
+    <v-card class="window window-2"></v-card>
+    <v-card class="window window-3"></v-card>
   </div>
 </template>
 
@@ -41,6 +41,6 @@
   border-radius: 5px;
   margin:10px;
   background: #191919;
-  opacity:80%;
+  opacity:80% !important;
 }
 </style>
