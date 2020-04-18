@@ -28,6 +28,17 @@ export default {
   components: {
     Navigation,
     LeftPane
+  },
+  head() {
+    return {
+      style: [
+        {
+          hid: 'vuetifyTheme',
+          type: 'text/css',
+          cssText: this.$vuetify.theme.generatedStyles
+        }
+      ]
+    }
   }
 }
 </script>
@@ -42,8 +53,7 @@ body {
 }
 
 .left-pane {
-  position:fixed;
-  z-index:4;
+  position: fixed;
+  z-index: 4;
 }
-
 </style>

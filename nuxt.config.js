@@ -36,7 +36,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/vuetify'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/vuetify', '@nuxtjs/style-resources'],
   /*
    ** Nuxt.js modules
    */
@@ -72,7 +72,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend (config, { isDev, isClient }) {
+    extend(config, { isDev, isClient }) {
       // ..
       config.module.rules.push(
         {

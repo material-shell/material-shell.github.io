@@ -60,6 +60,10 @@ export default {
   }
 }
 
+/deep/.theme--dark.v-card.content {
+  background: none;
+}
+
 /deep/.markdown-body > h3 {
   font-weight: 300;
   text-align: center;
