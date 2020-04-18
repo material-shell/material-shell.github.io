@@ -35,9 +35,10 @@
 }
 
 .window-1 {
-  height: 100%;
+  //height: 100%;
   width: 97.5%;
   margin: auto;
+  background: rgba(#191919, .85);
 }
 
 .window {
@@ -71,7 +72,7 @@
 }
 
 v-card.window-1 {
-  background: opacify(#191919, .6) !important;
+  //background: rgba(#191919, .6) !important;
 }
 
 

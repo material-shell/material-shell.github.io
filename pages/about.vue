@@ -1,7 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <v-card width="768px" max-width="100%">
+      <v-card class="content" width="768px" max-width="100%">
         <v-card-title class="headline" v-text="title" />
         <v-card-text class="markdown-body" v-html="content" />
       </v-card>
@@ -16,7 +16,7 @@ import fm from '~/data/about.md'
 export default {
   data() {
     return {
-      title: 'About',
+      title: 'What is it?',
       content: fm.html
     }
   },
@@ -27,7 +27,19 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+.content {
+  background: none;
+}
+</style>
+
 <style scoped>
+.headline {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 0 !important;
+  text-align: center;
+}
 
 .markdown-body {
   box-sizing: border-box;
@@ -37,8 +49,8 @@ export default {
   padding: 45px;
   color: #ccc !important;
   font-size: 14px;
-  padding-top:0;
-  margin-top:20px;
+  padding-top: 0;
+  margin-top: 20px;
   text-align: justify;
 }
 
@@ -63,5 +75,4 @@ export default {
   line-height: 40px;
   margin: 10px 0 10px 0;
 }
-
 </style>
