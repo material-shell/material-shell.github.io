@@ -16,7 +16,7 @@
         </nuxt-link>
       </div>
       <v-spacer />
-      <nav-menu class="hidden-xs-only" />
+      <!--<nav-menu class="hidden-xs-only" />-->
       <v-app-bar-nav-icon
         class="hidden-sm-and-up ms-font-gray"
         @click.stop="drawer = !drawer"

@@ -32,9 +32,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" global>
+body {
+  background: #3f51b5 !important;
+}
+
 .ms-blue-bg {
-  background: #3f51b5;
+  background: #3f51b5 !important;
 }
 
 .left-pane {
