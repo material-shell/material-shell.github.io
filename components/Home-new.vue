@@ -71,15 +71,19 @@
   right: 0;
 }
 
-v-card.window-1 {
-  //background: rgba(#191919, .6) !important;
-}
-
-
-
 video-card, get-material-shell-card {
   height: 100%;
   width: 100%;
+}
+</style>
+
+<style scoped>
+/deep/.theme--dark.v-card.window-1 {
+  background: rgba(25,25,25,.85);
+}
+
+/deep/.theme--dark.v-card.window-2 {
+  background:#000;
 }
 </style>
 

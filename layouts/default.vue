@@ -28,17 +28,6 @@ export default {
   components: {
     Navigation,
     LeftPane
-  },
-  head() {
-    return {
-      style: [
-        {
-          hid: 'vuetifyTheme',
-          type: 'text/css',
-          cssText: this.$vuetify.theme.generatedStyles
-        }
-      ]
-    }
   }
 }
 </script>

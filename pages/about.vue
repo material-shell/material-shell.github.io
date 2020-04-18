@@ -27,12 +27,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.content {
-  background: none;
-}
-</style>
-
 <style scoped>
 .headline {
   font-weight: 300;
