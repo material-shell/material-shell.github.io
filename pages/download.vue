@@ -22,6 +22,13 @@ export default {
 </script>
 
 <style scoped>
+.headline {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 0 !important;
+  text-align: center;
+}
+
 .markdown-body {
   box-sizing: border-box;
   min-width: 200px;
@@ -39,6 +46,10 @@ export default {
   .markdown-body {
     padding: 15px;
   }
+}
+
+/deep/.theme--dark.v-card, /deep/.theme--dark.v-sheet ,/deep/.theme--dark.v-card.content, /deep/.theme--dark.v-sheet.content {
+  background: none;
 }
 
 /deep/.markdown-body > h3 {

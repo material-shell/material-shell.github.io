@@ -13,6 +13,7 @@
   flex-flow: column wrap;
   align-items: stretch;
   justify-content: stretch;
+  opacity: 10%;
 }
 
 .window-1 {
