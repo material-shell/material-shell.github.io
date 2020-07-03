@@ -1,0 +1,14 @@
+{
+    "about": {
+        "data": "### Material Shell is a way of simplifying your relationship to windows.\n\nLess opening, less closing, less maximising, less minimising, less resizing, less moving, less switching between them = a simpler desktop experience.\nOne day [Adrien](https: //adrien.pesler.be/) noticed that every time he started his computer, it was the same routine.\n1. Opening all of his usual apps; Internet, file browser, music player, code editor\n2. Organising all the apps so they are where he needs them\n3. Resizing all the windows and moving them to the positions he was used to\nRealising that he and many others spent a lot of time dealing with windows in this way, he set out to *automate* all of these processes — and so *Material Shell* was born.\nThe primary mission of Material Shell is to automise and simplify window management. It acheives this my reducing the amount of window manipulations needed, and thereby giving you more time to do as you intended.\nTo make things crystal clear; in a classic desktop we need to organise / manipulate windows by:\n* Opening and closing them\n* Resizing them to our preferred size\n* Moving them to our desired position on the screen\n* Changing the window focus (moving windows *in front* of others, or even minimising unwanted ones)\n* In Linux and Mac OSX: Moving windows to our preferred workspace (for example; we might want to place our email app and our messaging app on the same screen)\n> The purpose of Material Shell is to make it so we need to do *less* of these.\n---\n"
+    },
+    "contact": {
+        "data": "contact data en"
+    },
+    "download": {
+        "data": "download data en"
+    },
+    "gallery": {
+        "data": "gallery data en"
+    }
+}

@@ -16,18 +16,18 @@
 </template>
 
 <script>
-import Navigation from '~/components/Navigation.vue'
-import LeftPane from '~/components/Left-Panel.vue'
+import Navigation from '~/components/Navigation/Navigation'
+import LeftPane from '~/components/Left-Panel/Left-Panel'
 
 export default {
+  components: {
+    Navigation,
+    LeftPane
+  },
   data() {
     return {
       fixed: false
     }
-  },
-  components: {
-    Navigation,
-    LeftPane
   }
 }
 </script>

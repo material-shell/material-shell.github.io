@@ -1,0 +1,73 @@
+.item {
+    display: block;
+    font-size: 20px;
+    color: #a3a3a3;
+  }
+  
+  .item:hover {
+    background: #222222;
+  }
+  
+  .app-menu {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background: #191919;
+    color: #a3a3a3;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .panel-icon {
+    color: #a3a3a3;
+    font-size:17.5px;
+  }
+  
+  .list-item {
+    height: 48px !important;
+    width: 48px !important;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .list-item:hover {
+    background: #222222;
+  }
+  
+  .current-year {
+    height: 48px !important;
+    width: 48px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .year {
+    height: 50%;
+  }
+  
+  .copy {
+    height: 50%;
+  }
+  
+  /deep/ .v-list-item--active {
+    border-left: 3px #3f51b5 solid;
+    color: #fff;
+    background: #000 !important;
+  }
+  
+  /deep/ .v-list-item__action {
+    height: 48px !important;
+    width: 48px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }

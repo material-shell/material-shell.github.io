@@ -1,0 +1,13 @@
+.left-pane {
+    position: fixed;
+    top: 48px;
+    width: 48px;
+    left: 0;
+    height: calc(100% - 48px);
+    background: #191919;
+    color: #a3a3a3;
+    display: inline-flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
