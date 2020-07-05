@@ -1,5 +1,5 @@
 <template>
-  <div class="left-pane hidden-xs-only">
+  <div class="left-pane hidden-sm-and-down">
     <app-menu />
     <system-tray />
   </div>

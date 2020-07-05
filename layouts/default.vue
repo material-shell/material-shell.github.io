@@ -1,11 +1,16 @@
 <template>
   <v-app dark class="ms-blue-bg">
     <navigation />
-    <left-pane class="left-pane" />
-
-    <v-content class="main-content">
-      <v-container>
-        <nuxt />
+    <v-content>
+      <v-container fluid>
+        <v-row>
+          <v-col md="1" class="hidden-sm-and-down">
+            <left-pane class="left-pane" />
+          </v-col>
+          <v-col :md="$vuetify.breakpoint.mdAndUp ? 11 : 12">
+            <nuxt />
+          </v-col>
+        </v-row>
       </v-container>
     </v-content>
 

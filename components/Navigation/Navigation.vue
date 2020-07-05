@@ -1,5 +1,15 @@
 <template>
   <div>
+    <v-navigation-drawer
+      v-model="drawer"
+      class="hidden-md-and-up"
+      :mini-variant="miniVariant"
+      :clipped="clipped"
+      :disable-resize-watcher="true"
+      fixed
+      app
+      ><nav-menu class="hidden-md-and-up" />
+    </v-navigation-drawer>
     <v-app-bar
       class="ms-panel-gray"
       height="48px"
@@ -18,19 +28,10 @@
       <v-spacer />
       <!--<nav-menu class="hidden-xs-only" />-->
       <v-app-bar-nav-icon
-        class="hidden-sm-and-up ms-font-gray"
+        class="hidden-md-and-up ms-font-gray"
         @click.stop="drawer = !drawer"
       />
     </v-app-bar>
-    <v-navigation-drawer
-      v-model="drawer"
-      class="hidden-sm-and-up"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-      ><nav-menu class="hidden-sm-and-up" />
-    </v-navigation-drawer>
   </div>
 </template>
 <script lang="ts" src="./Navigation.ts"></script>

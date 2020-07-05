@@ -1,6 +1,6 @@
 <template>
   <div class="nav-menu">
-    <ul class="hidden-xs-only desktop-nav-list">
+    <ul class="hidden-md-and-down desktop-nav-list">
       <li v-for="(item, i) in items" :key="i">
         <nuxt-link :to="item.to" class="n-link font-weight-medium no-style">{{
           item.title
@@ -8,7 +8,7 @@
       </li>
     </ul>
 
-    <v-list class="device-menu hidden-sm-and-up">
+    <v-list class="device-menu hidden-md-and-up">
       <v-list-item
         v-for="(item, i) in items"
         :key="i"
@@ -17,7 +17,7 @@
         exact
         class="device-menu-item font-weight-medium"
       >
-        <v-list-item-action class="hidden-sm-and-up">
+        <v-list-item-action class="hidden-md-and-up">
           <v-icon class="device-menu-icon">{{ item.icon }}</v-icon>
         </v-list-item-action>
         <v-list-item-content>

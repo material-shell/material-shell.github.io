@@ -1,57 +1,76 @@
 .workspace {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
-  justify-content: space-between;
-  position: absolute !important;
-  left: 48px;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  // display: flex;
+  // flex-flow: row nowrap;
+  // align-items: stretch;
+  // justify-content: space-between;
+  // position: absolute !important;
+  // left: 48px;
+  // top: 0;
+  // width: 100%;
+  // height: 100%;
 }
 
 .left-half {
-  width: calc(50% - 48px);
-  height: 100%;
+  // width: calc(50% - 48px);
+  // height: 100%;
 }
 
 .window-1 {
   //height: 100%;
-  width: 97.5%;
-  margin: auto;
-  background: rgba(#191919, 0.85);
+  // width: 97.5%;
+  // margin: auto;
+  // background: rgba(#191919, 0.85);
 }
 
 .window {
-  border-radius: 0 !important;
+  // border-radius: 0 !important;
 }
 
 .window-2 {
-  background: #000;
-  width: 100%;
-  height: 49.5%;
-  border-radius: 0 0 0 5px !important;
+  // background: #000;
+  // width: 100%;
+  // height: 49.5%;
+  // border-radius: 0 0 0 5px !important;
 }
 
 .window-3 {
-  width: 100%;
-  height: 49.5%;
-  border-radius: 5px 0 0 0 !important;
+  // width: 100%;
+  // height: 49.5%;
+  // border-radius: 5px 0 0 0 !important;
 }
 
 .right-half {
-  width: calc(50%);
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: stretch;
-  justify-content: space-between;
-  position: fixed;
-  right: 0;
+  // width: calc(50%);
+  // height: 100%;
+  // display: flex;
+  // flex-flow: column nowrap;
+  // align-items: stretch;
+  // justify-content: space-between;
+  // position: fixed;
+  // right: 0;
 }
 
 video-card,
 get-material-shell-card {
+  // height: 100%;
+  // width: 100%;
+}
+
+.sticky{
   height: 100%;
-  width: 100%;
+  max-width:inherit;
+  // display: flex;
+  // flex-flow: column nowrap;
+  align-items: stretch;
+  // justify-content: space-between;
+  position: fixed;
+  // right: 0;
+  .stickyGetMaterialShellCard{
+    height : 50% ; 
+    // width: 100%!important ;
+  } 
+  .stickyVideoCard{
+    height: 50%;
+    // width: 100%!important;
+  }
 }
