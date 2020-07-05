@@ -1,19 +1,7 @@
 <template>
-  <home width=100% height=100% />
+  <div>
+    <home />
+  </div>
 </template>
-
-<script>
-import Logo from '~/components/Logo.vue'
-import Home from '~/components/Home-new.vue'
-
-export default {
-  components: {
-    Logo,
-    Home
-  }
-}
-</script>
-
-<style scoped>
-
-</style>
+<script lang="ts" src="./index.ts"></script>
+<style lang="css" scoped src="./index.css"></style>

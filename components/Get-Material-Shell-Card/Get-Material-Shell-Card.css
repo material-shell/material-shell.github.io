@@ -1,0 +1,29 @@
+main {
+    background: #191919;
+    opacity: .7;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .download-button {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    padding: 1.5rem !important;
+    margin: 1.25rem !important;
+    margin-left: 0 !important;
+    margin-top: .75rem !important;
+  }
+  
+  .download-button-icon {
+      margin-left: 1rem;
+  }
+  
+  .card-title {
+      font-weight: 300;
+      font-size: 2rem;
+      margin-bottom: 0 !important;
+  }

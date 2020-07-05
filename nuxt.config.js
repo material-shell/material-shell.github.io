@@ -17,9 +17,7 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
    ** Customize the progress-bar color
@@ -32,11 +30,15 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['plugins/i18n.js'],
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/vuetify', '@nuxtjs/style-resources'],
+  buildModules: [
+    '@nuxt/typescript-build',
+    '@nuxtjs/vuetify',
+    '@nuxtjs/style-resources'
+  ],
   /*
    ** Nuxt.js modules
    */
@@ -67,6 +69,7 @@ export default {
    */
   router: {
     base: process.env.DEPLOY_ENV === 'STATIC' ? '/' : '/',
+    middleware: ['i18n']
   },
   build: {
     /*
@@ -74,15 +77,14 @@ export default {
      */
     extend(config, { isDev, isClient }) {
       // ..
-      config.module.rules.push(
-        {
-          test: /\.md/,
-          loader: 'frontmatter-markdown-loader',
-        }
-      )
+      config.module.rules.push({
+        test: /\.md/,
+        loader: 'frontmatter-markdown-loader'
+      })
       // Sets webpack's mode to development if `isDev` is true.
-      if (isDev) { config.mode = 'development' }
+      if (isDev) {
+        config.mode = 'development'
+      }
     }
-
   }
 }

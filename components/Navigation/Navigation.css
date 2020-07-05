@@ -1,0 +1,46 @@
+/deep/ .v-toolbar__content {
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  
+  /deep/ .theme--dark.v-btn.v-btn--icon {
+    color: #a3a3a3;
+  }
+  
+  .main-title {
+    margin-left: 2px;
+  }
+  
+  .no-style {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .ms-panel-gray {
+    background: #191919 !important;
+  }
+  .ms-blue {
+    background: #3f51b5;
+  }
+  
+  .ms-font-gray {
+    color: #a3a3a3;
+  }
+  
+  .ms-font-active {
+    color: #fff;
+  }
+  
+  .page-title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-right: 20px;
+  }
+  
+  .page-title:hover {
+    background: #222222;
+  }
