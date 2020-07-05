@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
-    "@types/showdown": "^1.9.3",
     "nuxt": "^2.0.0",
     "showdown": "^1.9.1",
     "vue-class-component": "^7.2.3",
@@ -21,6 +20,7 @@
     "vue-property-decorator": "^9.0.0"
   },
   "devDependencies": {
+    "@types/showdown": "^1.9.3",
     "@mdi/font": "^5.0.45",
     "@nuxt/typescript-build": "^0.6.0",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
