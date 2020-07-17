@@ -1,5 +1,5 @@
 <template>
-  <v-row v-if="isReady" no-gutters>
+  <v-row no-gutters>
     <v-col sm="12" md="6">
       <v-card class="window window-1">
         <content-card />

@@ -7,7 +7,7 @@
           <v-col md="1" class="hidden-sm-and-down">
             <left-pane class="left-pane" />
           </v-col>
-          <v-col :md="$vuetify.breakpoint.mdAndUp ? 11 : 12">
+          <v-col md="11">
             <nuxt />
           </v-col>
         </v-row>
