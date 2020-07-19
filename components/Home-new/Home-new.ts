@@ -1,4 +1,4 @@
-import { Component, Vue, Watch } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 import ContentCard from '~/components/Content-Card/Content-Card'
 import VideoCard from '~/components/Video-Card/Video-Card'
 import GetMaterialShellCard from '~/components/Get-Material-Shell-Card/Get-Material-Shell-Card'
@@ -10,11 +10,6 @@ import GetMaterialShellCard from '~/components/Get-Material-Shell-Card/Get-Mater
   }
 })
 class Home extends Vue {
-  private isReady!: boolean = null
-  private mounted(): void {
-    this.isReady = true
-  }
-
   private get sticky(): boolean {
     return this.$vuetify.breakpoint.mdAndUp
   }
