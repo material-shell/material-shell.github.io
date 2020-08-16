@@ -5,23 +5,23 @@ class AppMenu extends Vue {
     {
       icon: 'mdi-information',
       title: 'About',
-      to: '/about'
+      to: '#about',
     },
     {
       icon: 'mdi-image-multiple',
       title: 'Gallery',
-      to: '/gallery'
+      to: '#gallery',
     },
     {
       icon: 'mdi-account-box',
       title: 'Contact',
-      to: '/contact'
+      to: '#contact',
     },
     {
       icon: 'mdi-download',
       title: 'Download',
-      to: '/download'
-    }
+      to: '#download',
+    },
   ]
 }
 export default AppMenu

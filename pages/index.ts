@@ -1,14 +1,36 @@
 import { Component, Vue } from 'vue-property-decorator'
-import Logo from '~/components/Logo/Logo'
-import Home from '~/components/Home-new/Home-new'
+import GetMaterialShellCard from '~/components/Get-Material-Shell-Card/Get-Material-Shell-Card'
+import VideoCard from '~/components/Video-Card/Video-Card'
 @Component({
+  async asyncData({ $content, params }) {
+    return { content: await $content('about', params.slug).fetch() }
+  },
   components: {
-    Logo,
-    Home
-  }
+    VideoCard,
+    GetMaterialShellCard,
+  },
 })
 class Index extends Vue {
-  private title = 'Download'
-  private content = 'download'
+  private stickySize = {
+    left: `${
+      (document.body.clientWidth - this.$vuetify.application.left) / 2 +
+      this.$vuetify.application.left
+    }px`,
+    top: `${this.$vuetify.application.top}px`,
+    right: '0px',
+    bottom: '0px',
+  }
+
+  private refreshStickySize() {
+    this.stickySize = {
+      left: `${
+        (document.body.clientWidth - this.$vuetify.application.left) / 2 +
+        this.$vuetify.application.left
+      }px`,
+      top: `${this.$vuetify.application.top}px`,
+      right: '0px',
+      bottom: '0px',
+    }
+  }
 }
 export default Index

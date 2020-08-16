@@ -1,19 +1,21 @@
 <template>
-  <v-list class="hidden-xs-only app-menu">
+  <v-list class="app-menu">
     <v-list-item
       v-for="(item, i) in items"
       :key="i"
       :to="item.to"
       :alt="item.title"
-      class="list-item"
       router
       exact
     >
-      <v-list-item-action class="hidden-xs-only">
+      <v-list-item-icon>
         <v-icon class="panel-icon">{{ item.icon }}</v-icon>
-      </v-list-item-action>
+      </v-list-item-icon>
+      <v-list-item-content>
+        {{ item.title }}
+      </v-list-item-content>
     </v-list-item>
   </v-list>
 </template>
 <script lang="ts" src="./App-Menu.ts"></script>
-<style lang="css" scoped src="./App-Menu.css"></style>
+<style lang="scss" scoped src="./App-Menu.scss"></style>
