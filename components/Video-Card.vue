@@ -10,5 +10,12 @@
     ></iframe>
   </v-responsive>
 </template>
-<script lang="ts" src="./Video-Card.ts"></script>
-<style lang="scss" scoped src="./Video-Card.scss"></style>
+<script lang="ts">
+export default {}
+</script>
+<style lang="scss" scoped>
+iframe {
+  border-radius: 5px;
+  margin: auto;
+}
+</style>

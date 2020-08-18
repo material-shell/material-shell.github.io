@@ -16,6 +16,7 @@
     "@nuxt/typescript-runtime": "^1.0.0",
     "@nuxtjs/style-resources": "^1.0.0",
     "nuxt": "^2.14.0",
+    "rehype-add-classes": "^1.0.0",
     "showdown": "^1.9.1",
     "vue-class-component": "^7.2.3",
     "vue-i18n": "^8.18.2",

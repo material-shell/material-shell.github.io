@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app>
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -18,23 +18,23 @@
     </v-navigation-drawer>
 
     <v-app-bar app clipped-left dense color="surface" class="pl-0">
-      <nuxt-link to="/" class="ml-n4 d-flex align-center">
-        <logo />
+      <nuxt-link to="/" class="ml-n4 d-flex align-center fill-height text-decoration-none">
+        <div class="fill-height pa-2" icon>
+          <img class="fill-height" src="~/assets/img/no-bg-on-dark-small.svg" alt="Material Shell" />
+        </div>
+
         <v-toolbar-title class="ml-2 align-center">
-          <span class="title" v-text="title"></span>
+          <span class="title text--primary font-weight-bold" v-text="title"></span>
         </v-toolbar-title>
       </nuxt-link>
       <v-spacer />
       <!--<nav-menu class="hidden-xs-only" />-->
-      <v-app-bar-nav-icon
-        class="hidden-md-and-up ms-font-gray"
-        @click.stop="drawer = !drawer"
-      />
+      <v-app-bar-nav-icon class="hidden-md-and-up ms-font-gray" @click.stop="drawer = !drawer" />
     </v-app-bar>
 
     <v-main>
-      <v-container fluid class="pa-0 overflow-y-auto">
-        <v-col class="pa-0">
+      <v-container fluid class="pa-0 overflow-visible">
+        <v-col class="pa-0 overflow-visible">
           <nuxt />
         </v-col>
       </v-container>
@@ -43,15 +43,13 @@
 </template>
 
 <script>
-import AppMenu from '~/components/App-Menu/App-Menu'
-import SystemTray from '~/components/System-Tray/System-Tray'
-import Logo from '~/components/Logo/Logo'
+import AppMenu from '~/components/App-Menu.vue'
+import SystemTray from '~/components/System-Tray.vue'
 
 export default {
   components: {
     AppMenu,
     SystemTray,
-    Logo,
   },
   props: {
     source: String,
@@ -60,8 +58,5 @@ export default {
     drawer: null,
     title: 'Material Shell',
   }),
-  created() {
-    this.$vuetify.theme.dark = true
-  },
 }
 </script>

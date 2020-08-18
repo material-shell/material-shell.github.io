@@ -1,7 +1,0 @@
-.sticky {
-  top: 48px;
-  bottom: 0px;
-  left: calc((100vw - 48px) / 2 + 40px);
-  right: 0;
-  position: fixed;
-}
