@@ -20,7 +20,7 @@ async function waitForReadystate() {
 export default async function (to, from, savedPosition) {
   await waitForReadystate()
 
-  const options = { offset: 64 }
+  const options = { offset: 96 }
   let scrollTo = 0
 
   if (to.hash) {

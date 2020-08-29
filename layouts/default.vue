@@ -19,9 +19,11 @@
 
     <v-app-bar app clipped-left dense color="surface" class="pl-0">
       <nuxt-link to="/" class="ml-n4 d-flex align-center fill-height text-decoration-none">
-        <div class="fill-height pa-2" icon>
+        <div class="fill-height pa-2 hidden-sm-and-down" icon>
           <img class="fill-height" src="~/assets/img/no-bg-on-dark-small.svg" alt="Material Shell" />
         </div>
+
+        <v-app-bar-nav-icon class="hidden-md-and-up ms-font-gray" @click.stop="drawer = !drawer" />
 
         <v-toolbar-title class="ml-2 align-center">
           <span class="title text--primary font-weight-bold" v-text="title"></span>
@@ -29,7 +31,6 @@
       </nuxt-link>
       <v-spacer />
       <!--<nav-menu class="hidden-xs-only" />-->
-      <v-app-bar-nav-icon class="hidden-md-and-up ms-font-gray" @click.stop="drawer = !drawer" />
     </v-app-bar>
 
     <v-main>

@@ -85,18 +85,22 @@ export default {
     },
   },
   content: {
+    liveEdit: false,
     markdown: {
       rehypePlugins: [
         [
           'rehype-add-classes',
           {
-            h1: 'display-2 mb-6',
-            h2: 'display-1 mb-6',
-            h3: 'headline mb-4',
+            h1: 'display-2 mb-6 mt-8',
+            h2: 'display-1 mb-6 mt-8',
+            h3: 'headline mb-4 mt-8',
             h4: 'title mb-4',
             h5: 'subtitle-1 mb-4',
             h6: 'subtitle-2 mb-4',
             p: 'body-1',
+            ul: 'mb-4',
+            hr: 'v-divider theme--dark',
+            code: 'primary--text',
           },
         ],
       ],

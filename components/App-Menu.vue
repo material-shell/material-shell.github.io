@@ -21,8 +21,8 @@ export default {
     items: [
       {
         icon: 'mdi-information',
-        title: 'About',
-        to: '#about',
+        title: 'Material Shell',
+        to: '#material-shell',
       },
       {
         icon: 'mdi-compass',

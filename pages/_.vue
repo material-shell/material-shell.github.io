@@ -37,11 +37,15 @@
 <script type="ts">
 import GetMaterialShellCard from '~/components/Get-Material-Shell-Card.vue'
 import VideoCard from '~/components/Video-Card.vue'
+import HeadlineList from '~/components/Headline-List.vue'
+import HeadlineListItem from '~/components/Headline-List-Item.vue'
 
 export default {
   components: {
     VideoCard,
     GetMaterialShellCard,
+    HeadlineList,
+    HeadlineListItem,
   },
 
   async asyncData({ $content, params }) {
@@ -74,7 +78,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .sticky {
   top: 48px;
   bottom: 0px;
@@ -84,6 +88,11 @@ export default {
 }
 
 .nuxt-content {
+  color: rgba(255, 255, 255, 0.87);
+
+  h1:first-child {
+    margin-top: 0 !important;
+  }
   h1,
   h2,
   h3,
@@ -96,6 +105,40 @@ export default {
       width: 100%;
       height: 100%;
     }
+  }
+
+  p > img {
+    margin: 16px 0px;
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  hr {
+    display: block;
+    flex: 1 1 0px;
+    height: 0px;
+    max-height: 0px;
+    border: solid;
+    border-width: thin 0 0 0;
+    transition: inherit;
+    opacity: 12%;
+
+    margin: 48px -48px;
+  }
+
+  b,
+  strong {
+    color: #fafafa;
+  }
+
+  .v-list {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  code {
+    background: rgba(255, 255, 255, 0.08);
   }
 }
 </style>
