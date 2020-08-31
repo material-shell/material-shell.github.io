@@ -9,6 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt-ts generate && rm -R docs && mv -f dist/ docs/",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
@@ -25,7 +26,6 @@
     "vue-property-decorator": "^9.0.0"
   },
   "devDependencies": {
-    "@types/showdown": "^1.9.3",
     "@mdi/font": "^5.0.45",
     "@nuxt/types": "^2.14.0",
     "@nuxt/typescript-build": "^2.0.2",
@@ -33,11 +33,13 @@
     "@nuxtjs/eslint-config-typescript": "^3.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/vuetify": "^1.11.2",
+    "@types/showdown": "^1.9.3",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "push-dir": "^0.4.1"
   }
 }
