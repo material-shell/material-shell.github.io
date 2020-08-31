@@ -1,6 +1,6 @@
 # Material Shell
 
-A **modern desktop interface** for **Linux** - packaged as an extension for **[GNOME Shell](https://wiki.gnome.org/Projects/GnomeShell)**.
+An **modern desktop interface** for **Linux** - packaged as an extension for **[GNOME Shell](https://wiki.gnome.org/Projects/GnomeShell)**.
 
 Improve your user experience and get rid of the anarchy of traditional desktop workflows. 
 

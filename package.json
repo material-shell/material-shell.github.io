@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.6.0",
+    "@nuxt/http": "^0.5.11",
     "@nuxt/typescript-runtime": "^1.0.0",
     "@nuxtjs/style-resources": "^1.0.0",
+    "debounce": "^1.2.0",
     "nuxt": "^2.14.0",
     "rehype-add-classes": "^1.0.0",
     "showdown": "^1.9.1",

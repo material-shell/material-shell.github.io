@@ -7,6 +7,7 @@
       :alt="item.title"
       router
       exact
+      @click="$vuetify.goTo(item.to, { offset: 48 })"
     >
       <v-list-item-icon>
         <v-icon class="panel-icon">{{ item.icon }}</v-icon>
@@ -19,11 +20,6 @@
 export default {
   data: () => ({
     items: [
-      {
-        icon: 'mdi-information',
-        title: 'Material Shell',
-        to: '#material-shell',
-      },
       {
         icon: 'mdi-compass',
         title: 'Spatial model',

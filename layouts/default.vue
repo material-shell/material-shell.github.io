@@ -30,11 +30,12 @@
         </v-toolbar-title>
       </nuxt-link>
       <v-spacer />
+      <github-button :stars="stargazersCount"></github-button>
       <!--<nav-menu class="hidden-xs-only" />-->
     </v-app-bar>
 
-    <v-main>
-      <v-container fluid class="pa-0 overflow-visible">
+    <v-main class="surface-darken">
+      <v-container fluid class="pa-0 overflow-visible" v-scroll="onScroll">
         <v-col class="pa-0 overflow-visible">
           <nuxt />
         </v-col>
@@ -43,21 +44,54 @@
   </v-app>
 </template>
 
-<script>
+<script type="ts">
 import AppMenu from '~/components/App-Menu.vue'
 import SystemTray from '~/components/System-Tray.vue'
+import GithubButton from '~/components/Github-Button.vue'
 
 export default {
   components: {
     AppMenu,
     SystemTray,
+    GithubButton,
   },
   props: {
     source: String,
   },
+  async fetch() {
+    const res = await this.$http.get(
+      'https://api.github.com/repos/material-shell/material-shell'
+    )
+    const data = await res.json()
+    this.stargazersCount = data.stargazers_count
+  },
   data: () => ({
     drawer: null,
     title: 'Material Shell',
+    stargazersCount: null,
   }),
+  methods: {
+    onScroll(e) {
+      if (this.timeout) clearTimeout(this.timeout)
+      this.timeout = setTimeout(() => {
+        let anchor, currrentDistance
+        const anchors = [...document.getElementsByClassName('anchor')]
+        anchors.forEach((element) => {
+          if (
+            element.getBoundingClientRect().y - document.body.clientHeight / 2 >
+            0
+          )
+            return
+          const distance = Math.abs(element.getBoundingClientRect().y)
+          if (!anchor || currrentDistance > distance) {
+            anchor = element.id
+            currrentDistance = distance
+          }
+        })
+
+        location.hash = anchor
+      }, 50)
+    },
+  },
 }
 </script>

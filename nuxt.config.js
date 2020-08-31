@@ -57,7 +57,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxt/http'],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -73,6 +73,8 @@ export default {
       themes: {
         dark: {
           surface: '#191919',
+          'surface-darken': '#0d0d0d',
+          'surface-ligthen': '#262626',
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
@@ -91,7 +93,7 @@ export default {
         [
           'rehype-add-classes',
           {
-            h1: 'display-2 mb-6 mt-8',
+            h1: 'display-2 mb-6 mt-8 anchor',
             h2: 'display-1 mb-6 mt-8',
             h3: 'headline mb-4 mt-8',
             h4: 'title mb-4',
@@ -112,21 +114,5 @@ export default {
   router: {
     base: '',
     middleware: ['i18n'],
-  },
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, { isDev, isClient }) {
-      // ..
-      config.module.rules.push({
-        test: /\.md/,
-        loader: 'frontmatter-markdown-loader',
-      })
-      // Sets webpack's mode to development if `isDev` is true.
-      if (isDev) {
-        config.mode = 'development'
-      }
-    },
   },
 }

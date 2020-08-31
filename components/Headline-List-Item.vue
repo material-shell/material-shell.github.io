@@ -1,5 +1,5 @@
 <template>
-  <v-list-item :to="{ hash: to }" :alt="title" router>
+  <v-list-item :to="{ hash: to }" :alt="title" router @click="$vuetify.goTo(to, { offset: 48 })">
     <v-list-item-avatar>
       <v-icon class="panel-icon">{{ icon }}</v-icon>
     </v-list-item-avatar>
@@ -20,7 +20,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .v-list-item {
-  margin: 0;
+  margin-bottom: 0 !important;
   &.v-list-item--active::before {
     opacity: 0;
   }

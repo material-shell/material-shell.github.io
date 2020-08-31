@@ -17,6 +17,8 @@ async function waitForReadystate() {
   }
 }
 
+let prevPath
+
 export default async function (to, from, savedPosition) {
   await waitForReadystate()
 
@@ -24,10 +26,14 @@ export default async function (to, from, savedPosition) {
   let scrollTo = 0
 
   if (to.hash) {
+    if (prevPath === to.path) return
+    prevPath = to.path
     scrollTo = to.hash
   } else if (savedPosition) {
     scrollTo = savedPosition.y
   }
+
+  console.log('scrollBehavior')
 
   return new Promise((resolve) => {
     setTimeout(() => {

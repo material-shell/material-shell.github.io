@@ -1,34 +1,36 @@
 <template>
   <!-- Desktop -->
-  <v-row v-if="$vuetify.breakpoint.mdAndUp" no-gutters>
-    <v-col sm="12" md="6" class="pa-4 pr-2">
-      <v-card class="pa-12">
-        <nuxt-content :document="content" />
-      </v-card>
-    </v-col>
-    <div
-      v-resize="refreshStickySize"
-      class="d-flex flex-column sticky pa-4 pl-2"
-      :style="stickySize"
-    >
-      <v-card>
-        <video-card />
-      </v-card>
-      <v-card class="d-flex flex-grow-1 mt-4">
-        <get-material-shell-card />
-      </v-card>
-    </div>
-  </v-row>
+  <v-responsive v-if="$vuetify.breakpoint.mdAndUp" max-width="1872px" class="mx-auto">
+    <v-row no-gutters>
+      <v-col sm="12" md="6" class="pa-4 pr-2">
+        <v-card class="pa-12 surface">
+          <nuxt-content :document="content" />
+        </v-card>
+      </v-col>
+      <div
+        v-resize="refreshStickySize"
+        class="d-flex flex-column sticky pa-4 pl-2"
+        :style="stickySize"
+      >
+        <v-card>
+          <video-card />
+        </v-card>
+        <v-card class="d-flex overflow-y-auto mt-4 pa-6 surface">
+          <get-material-shell-card />
+        </v-card>
+      </div>
+    </v-row>
+  </v-responsive>
 
   <!-- Mobile -->
   <v-col v-else>
     <v-card>
       <video-card />
     </v-card>
-    <v-card class="pa-6 mt-4">
+    <v-card class="pa-6 mt-4 surface">
       <nuxt-content :document="content" />
     </v-card>
-    <v-card class="d-flex flex-grow-1 mt-4">
+    <v-card class="d-flex flex-grow-1 mt-4 pa-6 surface">
       <get-material-shell-card />
     </v-card>
   </v-col>
@@ -44,11 +46,13 @@ export default {
   components: {
     VideoCard,
     GetMaterialShellCard,
+    // eslint-disable-next-line vue/no-unused-components
     HeadlineList,
+    // eslint-disable-next-line vue/no-unused-components
     HeadlineListItem,
   },
 
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, $http }) {
     return { content: await $content('about', params.slug).fetch() }
   },
 
@@ -70,7 +74,12 @@ export default {
           this.$vuetify.application.left
         }px`,
         top: `${this.$vuetify.application.top}px`,
-        right: '0px',
+        width: `${
+          Math.min(
+            document.body.clientWidth - this.$vuetify.application.left,
+            1872
+          ) / 2
+        }px`,
         bottom: '0px',
       }
     },
@@ -93,12 +102,7 @@ export default {
   h1:first-child {
     margin-top: 0 !important;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1 {
     position: relative;
     a {
       position: absolute;
@@ -137,8 +141,16 @@ export default {
     }
   }
 
-  code {
-    background: rgba(255, 255, 255, 0.08);
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: default;
+    }
   }
+}
+
+.v-application code {
+  background: rgba(255, 255, 255, 0.08) !important;
+  padding: 2px 4px;
 }
 </style>
