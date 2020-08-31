@@ -8,7 +8,7 @@
       class="overflow-hidden"
     >
       <v-icon class="ml-n1 mr-2">mdi-github</v-icon>
-      <span>Material Shell</span>
+      <span class="hidden-sm-and-down">Material Shell</span>
       <span class="stars-count surface--text d-flex align-center pa-2 ml-2 mr-n4 grey lighten-3">
         {{ stars }}
         <v-icon class="ml-1" style="margin-top: -2px;" small>mdi-star</v-icon>

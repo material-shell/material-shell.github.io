@@ -30,7 +30,7 @@
     <v-card class="pa-6 mt-4 surface">
       <nuxt-content :document="content" />
     </v-card>
-    <v-card class="d-flex flex-grow-1 mt-4 pa-6 surface">
+    <v-card class="d-flex flex-grow-1 mt-4 pa-4 surface">
       <get-material-shell-card />
     </v-card>
   </v-col>
