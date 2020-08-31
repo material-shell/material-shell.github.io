@@ -101,7 +101,7 @@ export default {
             h6: 'subtitle-2 mb-4',
             p: 'body-1',
             ul: 'mb-4',
-            hr: 'v-divider theme--dark',
+            hr: 'v-divider theme--dark my-12 mx-n6 mx-sm-n6 mx-md-n12 mx-lg-n12 mx-xl-n12',
             code: 'primary--text',
           },
         ],

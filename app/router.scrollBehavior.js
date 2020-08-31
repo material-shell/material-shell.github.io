@@ -16,17 +16,22 @@ async function waitForReadystate() {
     })
   }
 }
-
-let prevPath
+let prevPath;
+let prevHash = '#material-shell';
 
 export default async function (to, from, savedPosition) {
   await waitForReadystate()
 
   const options = { offset: 96 }
   let scrollTo = 0
-
+  console.log(to, to.path) 
   if (to.hash) {
-    if (prevPath === to.path) return
+    if (prevHash === to.hash || prevPath === to.path) {
+      prevHash = to.hash
+      prevPath = to.path
+      return
+    }
+    prevHash = to.hash
     prevPath = to.path
     scrollTo = to.hash
   } else if (savedPosition) {

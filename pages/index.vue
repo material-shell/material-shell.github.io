@@ -61,11 +61,6 @@ export default {
     title: 'Material Shell',
     stickySize: {},
   }),
-  created() {
-    if (this.$nuxt.$route.hash) {
-      this.$vuetify.goTo(this.$nuxt.$route.hash, { offset: 64 })
-    }
-  },
   methods: {
     refreshStickySize() {
       this.stickySize = {
@@ -126,8 +121,6 @@ export default {
     border-width: thin 0 0 0;
     transition: inherit;
     opacity: 12%;
-
-    margin: 48px -48px;
   }
 
   b,

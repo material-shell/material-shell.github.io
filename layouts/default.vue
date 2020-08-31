@@ -88,8 +88,8 @@ export default {
             currrentDistance = distance
           }
         })
-
-        location.hash = anchor
+        history.replaceState(null, null, '#' + anchor)
+        //location.hash = anchor
       }, 50)
     },
   },
