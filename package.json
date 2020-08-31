@@ -8,7 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "DEPLOY_ENV=STATIC nuxt generate && mv -f dist/ docs/",
+    "generate": "nuxt-ts generate && rm -R docs && mv -f dist/ docs/",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
