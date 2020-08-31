@@ -4,5 +4,8 @@
 // $font-size-root: 20px;
 $ms-panel-gray: #191919;
 $ms-blue: #3f51b5;
-$ms-font-gray:#a3a3a3;
+$ms-font-gray: #a3a3a3;
 $ms-font-active: #fff;
+
+//$navigation-drawer-border-width: 0px;
+@import '~vuetify/src/styles/styles.sass';
