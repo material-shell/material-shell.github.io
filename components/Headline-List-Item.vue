@@ -24,5 +24,11 @@ export default {
   &.v-list-item--active::before {
     opacity: 0;
   }
+  .v-list-item__content > :not(:last-child) {
+    margin-bottom: 4px;
+  }
+  .v-list-item__subtitle {
+    white-space: initial;
+  }
 }
 </style>

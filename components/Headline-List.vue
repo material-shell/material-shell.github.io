@@ -1,5 +1,5 @@
 <template>
-  <v-list class="surface" three-line nav>
+  <v-list class="surface" nav>
     <slot></slot>
   </v-list>
 </template>
