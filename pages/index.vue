@@ -12,7 +12,7 @@
         class="d-flex flex-column sticky pa-4 pl-2"
         :style="stickySize"
       >
-        <v-card>
+        <v-card class="overflow-hidden flex-shrink-0">
           <video-card />
         </v-card>
         <v-card class="d-flex overflow-y-auto mt-4 pa-4 pa-xl-6 pt-2 surface">
@@ -24,7 +24,7 @@
 
   <!-- Mobile -->
   <v-col v-else>
-    <v-card>
+    <v-card class="overflow-hidden flex-shrink-0">
       <video-card />
     </v-card>
     <v-card class="pa-6 mt-4 surface">
