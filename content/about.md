@@ -15,7 +15,7 @@ Get notified about updates and join us at ‎‎<a href="https://discord.gg/vBb7
             alt="chat on Discord">
 </a>
 
-**Discover what make Material Shell awesome**
+**Discover what makes Material Shell Awesome**
 
 <headline-list>
   
