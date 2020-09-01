@@ -9,10 +9,23 @@
       exact
       @click="$vuetify.goTo(item.to, { offset: 48 })"
     >
-      <v-list-item-icon>
-        <v-icon class="panel-icon">{{ item.icon }}</v-icon>
+      <v-list-item-icon class="my-md-3">
+        <v-icon>{{ item.icon }}</v-icon>
       </v-list-item-icon>
       <v-list-item-content>{{ item.title }}</v-list-item-content>
+    </v-list-item>
+    <v-list-item
+      class="hidden-md-and-up"
+      :to="{ hash: '#installation' }"
+      alt="Installation"
+      router
+      exact
+      @click="$vuetify.goTo('#installation', { offset: 48 })"
+    >
+      <v-list-item-icon class="my-md-3">
+        <v-icon>mdi-download</v-icon>
+      </v-list-item-icon>
+      <v-list-item-content>Installation</v-list-item-content>
     </v-list-item>
   </v-list>
 </template>
@@ -53,8 +66,6 @@ export default {
 .v-list {
   .v-list-item {
     .v-list-item__icon {
-      margin: 12px 0px;
-
       .v-icon {
         color: #a3a3a3 !important;
       }

@@ -4,7 +4,7 @@
       v-model="drawer"
       app
       clipped
-      :mini-variant="$vuetify.breakpoint.mdAndUp"
+      :mini-variant="$vuetify.breakpoint.lgAndUp"
       mini-variant-width="48"
       floating
       style="z-index: 10;"
@@ -18,10 +18,10 @@
     </v-navigation-drawer>
 
     <v-app-bar app clipped-left dense color="surface" class="pl-0">
-      <v-app-bar-nav-icon class="hidden-md-and-up ms-font-gray" @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon class="hidden-lg-and-up ms-font-gray" @click.stop="drawer = !drawer" />
 
       <nuxt-link to="/" class="d-flex align-center fill-height text-decoration-none">
-        <div class="fill-height ml-n4 pa-2 hidden-sm-and-down" icon>
+        <div class="fill-height ml-n4 pa-2 hidden-md-and-down" icon>
           <img class="fill-height" src="~/assets/img/no-bg-on-dark-small.svg" alt="Material Shell" />
         </div>
 

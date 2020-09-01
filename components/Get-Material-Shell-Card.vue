@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card-title>Installation</v-card-title>
+    <v-card-title id="installation">Installation</v-card-title>
     <v-card-text>
       <p class="text-subtitle-1">
         Material Shell is technically an extension of
