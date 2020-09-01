@@ -3,8 +3,10 @@
     <v-responsive :aspect-ratio="16 / 9">
       <div id="youtube-player"></div>
     </v-responsive>
-    <v-divider :vertical="$vuetify.breakpoint.lgAndDown"></v-divider>
-    <video-playlist @select-video="updateVideoPlayer"></video-playlist>
+    <template v-if="$vuetify.breakpoint.mdAndUp">
+      <v-divider :vertical="$vuetify.breakpoint.lgAndDown"></v-divider>
+      <video-playlist @select-video="updateVideoPlayer"></video-playlist>
+    </template>
   </div>
 </template>
 <script>
