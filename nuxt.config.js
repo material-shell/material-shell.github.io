@@ -49,11 +49,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [
-    '@nuxt/typescript-build',
-    '@nuxtjs/vuetify',
-    '@nuxtjs/style-resources',
-  ],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/vuetify'],
   /*
    ** Nuxt.js modules
    */
@@ -64,10 +60,6 @@ export default {
    */
   vuetify: {
     treeShake: true,
-    options: {
-      customProperties: true,
-    },
-    customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: true,
       themes: {
@@ -112,9 +104,7 @@ export default {
   /*
    ** Build configuration
    */
-  build: {
-    extractCSS: true,
-  },
+  build: {},
   router: {
     base: '',
     middleware: ['i18n'],

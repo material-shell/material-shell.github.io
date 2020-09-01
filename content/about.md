@@ -1,6 +1,6 @@
 # Material Shell
 
-An **modern desktop interface** for **Linux** - packaged as an extension for **[GNOME Shell](https://wiki.gnome.org/Projects/GnomeShell)**.
+A **modern desktop interface** for **Linux** - packaged as an extension for **[GNOME Shell](https://wiki.gnome.org/Projects/GnomeShell)**.
 
 Improve your user experience and get rid of the anarchy of traditional desktop workflows. 
 
@@ -20,7 +20,7 @@ Get notified about updates and join us at ‎‎<a href="https://discord.gg/vBb7
 <headline-list>
   
 <headline-list-item icon="mdi-compass" to="#spatial-model" title="Spatial Model">
-  A natural and predicable organization where all windows are organized in a grid.
+  A natural and predictable organization where all windows are organized in a grid.
 </headline-list-item>
 
 <headline-list-item icon="mdi-monitor-dashboard" to="#interface" title="Interface">
@@ -32,7 +32,7 @@ Get notified about updates and join us at ‎‎<a href="https://discord.gg/vBb7
 </headline-list-item>
 
 <headline-list-item icon="mdi-content-save" to="#persistence" title="Persistence">
-  help you retrieve your favorite layout and window's organization even after a reboot.
+  Help you retrieve your favorite layout and window's organization even after a reboot.
 </headline-list-item>
 
 <headline-list-item icon="mdi-keyboard" to="#hotkeys" title="Hotkeys">
@@ -51,13 +51,13 @@ As humans we are able to navigate much easier in a known space so we made it pre
 
 ![Spatial model showcase](/spatialisation.gif)
 
-A **workspace** is an area that you can **contain** multiple **app** at once and switch between them easily.
+A **workspace** is an area that you can **contain** multiple **apps** at once and switch between them easily.
 
 In Material Shell, every **workspace** can be **visualized** as a **row** with several apps.
 
 When you **open** a new **app**, it is **automatically placed** at the **end** of the current **workspace**.
 
-When you add a **new workspace**, it **automatically added underneath**.
+When you add a **new workspace**, it is **automatically added underneath**.
 
 There's never any doubt as to where it has gone, and to where to find it again.
 
