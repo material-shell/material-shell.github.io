@@ -1,13 +1,17 @@
 <template>
   <div>
-    <v-card-title id="installation">Installation</v-card-title>
+    <v-card-title class="display-2 hidden-md-and-up" id="installation">Installation</v-card-title>
+    <v-card-title class="text-subtitle-1">
+      <span>
+        Material Shell require a
+        <strong>
+          recent
+          <a href="https://wiki.gnome.org/Projects/GnomeShell">GNOME Shell</a> installed
+        </strong>. (At least 3.34+)
+      </span>
+    </v-card-title>
+
     <v-card-text>
-      <p class="text-subtitle-1">
-        Material Shell is technically an extension of
-        <a
-          href="https://wiki.gnome.org/Projects/GnomeShell"
-        >GNOME Shell</a> so you need to install it first.
-      </p>
       <v-expansion-panels :value="0">
         <v-expansion-panel>
           <v-expansion-panel-header

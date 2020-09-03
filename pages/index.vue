@@ -15,7 +15,7 @@
         <v-card class="overflow-hidden flex-shrink-0">
           <video-card />
         </v-card>
-        <v-card class="d-flex overflow-y-auto mt-4 pa-4 pa-xl-6 pt-2 surface">
+        <v-card class="d-flex overflow-y-auto mt-4 pa-4 pa-xl-6 surface">
           <get-material-shell-card />
         </v-card>
       </div>
