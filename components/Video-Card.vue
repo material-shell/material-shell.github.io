@@ -12,7 +12,7 @@
 <script>
 export default {
   data: () => ({
-    videoPlayed: '0AkWSNQBoLI',
+    videoPlayed: 'zKjD_yDbek4',
   }),
   mounted() {
     if (window.YT) {
@@ -34,22 +34,21 @@ export default {
     createPlayer() {
       this.player = new this.youtube.Player('youtube-player', {
         videoId: this.videoPlayed, // YouTube Video ID
-        width: '100%', // Player width (in px)
-        height: '100%', // Player height (in px)
+        width: '1280', // Player width (in px)
+        height: '720', // Player height (in px)
         playerVars: {
           autoplay: 1, // Auto-play the video on load
           controls: 1, // Show pause/play buttons in player
           showinfo: 0, // Hide the video title
           modestbranding: 1, // Hide the Youtube Logo
           loop: 1, // Run the video in a loop
-          fs: 0, // Hide the full screen button
-          cc_load_policy: 0, // Hide closed captions
           iv_load_policy: 3, // Hide the Video Annotations
           autohide: 0, // Hide video controls when playing
         },
         events: {
           onReady: (e) => {
             this.player.mute()
+            this.player.playVideo()
           },
         },
       })
@@ -64,4 +63,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+::v-deep #youtube-player {
+  width: 100%;
+  height: 100%;
+}
 </style>

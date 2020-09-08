@@ -35,7 +35,7 @@
     </v-app-bar>
 
     <v-main class="surface-darken">
-      <v-container fluid class="pa-0 overflow-visible" v-scroll="onScroll">
+      <v-container fluid v-scroll="onScroll" class="pa-0 overflow-visible">
         <v-col class="pa-0 overflow-visible">
           <nuxt />
         </v-col>
@@ -88,8 +88,8 @@ export default {
             currrentDistance = distance
           }
         })
-        history.replaceState(null, null, '#' + anchor)
-        //location.hash = anchor
+        // Catch here to prevent route duplication error
+        this.$router.replace({ hash: anchor }).catch((err) => {})
       }, 50)
     },
   },

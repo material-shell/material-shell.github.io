@@ -14,15 +14,14 @@
         "
         @click="selectVideo(id)"
       ></v-responsive>
-      <v-divider :key="i + 'a'" :vertical="$vuetify.breakpoint.xl"></v-divider>
     </template>
   </div>
 </template>
 <script >
 export default {
   data: () => ({
-    playlist: ['0AkWSNQBoLI', 'uonXldePGT0'],
-    current: '0AkWSNQBoLI',
+    playlist: ['zKjD_yDbek4', '0AkWSNQBoLI', 'uonXldePGT0'],
+    current: 'zKjD_yDbek4',
   }),
   created() {
     this.$emit('select-video', this.current)
@@ -40,6 +39,11 @@ export default {
   background-size: cover;
   background-position: center;
   transition: opacity 300ms;
+  margin: 6px;
+  border-radius: 4px;
+  &:not(:first-child) {
+    margin-top: 0px;
+  }
   &:not(.active) {
     opacity: 0.5;
   }
