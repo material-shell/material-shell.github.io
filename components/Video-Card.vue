@@ -48,7 +48,7 @@ export default {
         events: {
           onReady: (e) => {
             this.player.mute()
-            this.player.playVideo()
+            //this.player.playVideo()
           },
         },
       })
