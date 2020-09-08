@@ -120,7 +120,7 @@ export default {
     border: solid;
     border-width: thin 0 0 0;
     transition: inherit;
-    opacity: 0.12;
+    max-width: initial;
   }
 
   b,
