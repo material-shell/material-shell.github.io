@@ -12,7 +12,7 @@
 <script>
 export default {
   data: () => ({
-    videoPlayed: 'zKjD_yDbek4',
+    videoPlayed: 'Wc5mbuKrGDE',
   }),
   mounted() {
     if (window.YT) {

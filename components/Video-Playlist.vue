@@ -20,8 +20,8 @@
 <script >
 export default {
   data: () => ({
-    playlist: ['zKjD_yDbek4', '0AkWSNQBoLI', 'uonXldePGT0'],
-    current: 'zKjD_yDbek4',
+    playlist: ['Wc5mbuKrGDE', '0AkWSNQBoLI', 'uonXldePGT0'],
+    current: 'Wc5mbuKrGDE',
   }),
   created() {
     this.$emit('select-video', this.current)
