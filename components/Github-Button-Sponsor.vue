@@ -21,20 +21,5 @@ export default {
 <style lang="scss" scoped>
 .v-btn {
   min-width: 48px !important;
-  .stars-count {
-    height: 36px;
-  }
-  .star-please {
-    position: absolute;
-    opacity: 0;
-  }
-  &:hover {
-    ::v-deep .v-btn__content *:not(.star-please) {
-      opacity: 0;
-    }
-    .star-please {
-      opacity: 1;
-    }
-  }
 }
 </style>
