@@ -41,6 +41,7 @@ import GetMaterialShellCard from '~/components/Get-Material-Shell-Card.vue'
 import VideoCard from '~/components/Video-Card.vue'
 import HeadlineList from '~/components/Headline-List.vue'
 import HeadlineListItem from '~/components/Headline-List-Item.vue'
+import VideoGif from '~/components/Video-Gif.vue'
 
 export default {
   components: {
@@ -50,10 +51,12 @@ export default {
     HeadlineList,
     // eslint-disable-next-line vue/no-unused-components
     HeadlineListItem,
+    // eslint-disable-next-line vue/no-unused-components
+    VideoGif,
   },
 
   async asyncData({ $content, params, $http }) {
-    return { content: await $content('about', params.slug).fetch() }
+    return { content: await $content('documentation', params.slug).fetch() }
   },
 
   data: ({ $vuetify }) => ({
@@ -104,12 +107,6 @@ export default {
       width: 100%;
       height: 100%;
     }
-  }
-
-  p > img {
-    margin: 16px 0px;
-    max-width: 100%;
-    border-radius: 16px;
   }
 
   hr {
