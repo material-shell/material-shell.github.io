@@ -63,6 +63,7 @@ export default {
     source: String,
   },
   async fetch() {
+    this.$http.get('http://api.material-shell.com/website')
     const res = await this.$http.get(
       'https://api.github.com/repos/material-shell/material-shell'
     )
