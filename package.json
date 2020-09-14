@@ -1,7 +1,7 @@
 {
   "name": "material-shell-website",
   "version": "1.0.0",
-  "description": "The official website for the Material Shell project",
+  "description": "A modern desktop interface for Linux - packaged as an extension for GNOME Shell. Improve your user experience and get rid of the anarchy of traditional desktop workflows. Designed to simplify navigation and reduce the need to manipulate windows in order to improve productivity. It's meant to be 100% predictable and bring the benefits of tools coveted by professionals to everyone.",
   "author": "sashinexists",
   "private": true,
   "scripts": {
