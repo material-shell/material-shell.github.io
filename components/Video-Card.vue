@@ -37,7 +37,6 @@ export default {
         width: '1280', // Player width (in px)
         height: '720', // Player height (in px)
         playerVars: {
-          autoplay: 1, // Auto-play the video on load
           controls: 1, // Show pause/play buttons in player
           showinfo: 0, // Hide the video title
           modestbranding: 1, // Hide the Youtube Logo
@@ -47,7 +46,7 @@ export default {
         },
         events: {
           onReady: (e) => {
-            this.player.mute()
+            //this.player.mute()
             //this.player.playVideo()
           },
         },
