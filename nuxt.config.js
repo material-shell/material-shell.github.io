@@ -16,7 +16,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: 'Material Shell- A new desktop experience',
+    title: 'Material Shell - A new desktop experience',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -28,7 +28,7 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Material Shell- A new desktop experience',
+        content: 'Material Shell - A new desktop experience',
       },
       {
         hid: 'og:description',
