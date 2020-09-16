@@ -45,6 +45,11 @@ export default {
         property: 'twitter:card',
         content: 'summary_large_image',
       },
+      {
+        hid: 'twitter:image',
+        property: 'twitter:image',
+        content: 'https://material-shell.com/social-screenshot.png',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
