@@ -38,7 +38,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/social-screenshot.png',
+        content: 'https://material-shell.com/social-screenshot.png',
       },
       {
         hid: 'twitter:card',
