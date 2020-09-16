@@ -26,6 +26,16 @@ export default {
         content: process.env.npm_package_description || '',
       },
       {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Material Shell- A new desktop experience',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: process.env.npm_package_description || '',
+      },
+      {
         hid: 'og:image',
         property: 'og:image',
         content: '/social-screenshot.png',
