@@ -6,10 +6,9 @@ Improve your user experience and get rid of the anarchy of traditional desktop w
 
 Designed to **simplify** navigation and **reduce** the need to **manipulate** windows in order to **improve productivity**. It's meant to be 100% **predictable** and bring the benefits of tools coveted by professionals to everyone. 
 
-<!-- * **[Spatial Model]()** a **natural** and **predicable organization** where all windows are organized in a **grid**.
-* **[Interface]()** is designed to give an at-a-glance view of spatial model state and allow you to navigate with a mouse or on a touchscreen.
-* **[Tiling engine]()** **automatically arrange** the application's **window** in a **predictable** and mutually **non-overlapping** disposition.
-* **[Persistence]()** help you **retrieve** your **favorite layout** and **window's organization** even after a reboot. -->
+<sponsor-card>
+</sponsor-card>
+
 Get notified about updates and join us at ‎‎<a href="https://discord.gg/vBb7D9a">
         <img valign="middle" src="https://img.shields.io/discord/584783412959641716?logo=discord&style=for-the-badge"
             alt="chat on Discord">

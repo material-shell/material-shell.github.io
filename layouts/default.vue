@@ -31,8 +31,8 @@
       </nuxt-link>
       <v-spacer />
       <github-button :stars="stargazersCount"></github-button>
-      <github-button-sponsor class="ml-2"></github-button-sponsor>
-
+      <!--       <github-button-sponsor class="ml-2"></github-button-sponsor>
+      -->
       <!--<nav-menu class="hidden-xs-only" />-->
     </v-app-bar>
 

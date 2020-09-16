@@ -42,6 +42,7 @@ import VideoCard from '~/components/Video-Card.vue'
 import HeadlineList from '~/components/Headline-List.vue'
 import HeadlineListItem from '~/components/Headline-List-Item.vue'
 import VideoGif from '~/components/Video-Gif.vue'
+import SponsorCard from '~/components/Sponsor-Card.vue'
 
 export default {
   components: {
@@ -51,6 +52,8 @@ export default {
     HeadlineList,
     // eslint-disable-next-line vue/no-unused-components
     HeadlineListItem,
+    // eslint-disable-next-line vue/no-unused-components
+    SponsorCard,
     // eslint-disable-next-line vue/no-unused-components
     VideoGif,
   },
