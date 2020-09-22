@@ -48,6 +48,12 @@
                   class="primary--text text-subtitle-2"
                 >yay -S gnome-shell-extension-material-shell-git</code>
               </li>
+              <li>
+                <strong>Manjaro:</strong>
+                <code
+                  class="primary--text text-subtitle-2"
+                >pacman -S gnome-shell-extension-material-shell</code>
+              </li>
             </ul>
             <i>
               (We appreciate package maintainers! If you would like to make a
