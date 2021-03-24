@@ -17,10 +17,16 @@
     </template>
   </div>
 </template>
-<script >
+<script>
 export default {
   data: () => ({
-    playlist: ['Wc5mbuKrGDE', 'Lp8IXzMHo_Q', '0AkWSNQBoLI', 'uonXldePGT0'],
+    playlist: [
+      'Wc5mbuKrGDE',
+      'Lp8IXzMHo_Q',
+      'E2BZJYNfmiI',
+      '0AkWSNQBoLI',
+      'uonXldePGT0',
+    ],
     current: 'Wc5mbuKrGDE',
   }),
   created() {
