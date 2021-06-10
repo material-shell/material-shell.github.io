@@ -33,7 +33,7 @@ export default {
       {
         icon: 'mdi-discord',
         title: 'Discord',
-        to: 'https://discord.gg/ZUqgA9M',
+        to: 'https://discord.gg/vBb7D9a',
       },
     ],
   }),
