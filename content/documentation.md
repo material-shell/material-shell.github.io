@@ -137,7 +137,7 @@ At any time, it is possible to switch between these layouts:
 
 # Persistence
 
-The best way to organise your windows and workspaces, is to not to.
+The best way to organise your windows and workspaces, is to not need to.
 
 *Have you ever noticed that every time you open up your desktop, it is the same routine? Open up your apps, arrange them in the right place?*
 
