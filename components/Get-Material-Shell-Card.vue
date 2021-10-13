@@ -101,7 +101,7 @@
             >
 
             <p class="text-subtitle-1 mt-2 mb-2">
-              The you can update with the last changes
+              Then you can update with the last changes
             </p>
             <code class="primary--text">
               git pull
