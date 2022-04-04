@@ -22,6 +22,7 @@ export default {
   data: () => ({
     playlist: [
       'Wc5mbuKrGDE',
+      'RSYPMSzSzT4',
       'Lp8IXzMHo_Q',
       'E2BZJYNfmiI',
       '0AkWSNQBoLI',
