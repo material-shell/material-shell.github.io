@@ -33,7 +33,7 @@
             </ul>
           </v-expansion-panel-content>
         </v-expansion-panel>
-        <v-expansion-panel>
+        <!--         <v-expansion-panel>
           <v-expansion-panel-header class="text-subtitle-2"
             >Use your distribution Package Manager</v-expansion-panel-header
           >
@@ -76,7 +76,7 @@
               >gnome-extensions enable material-shell@papyelgringo</code
             >
           </v-expansion-panel-content>
-        </v-expansion-panel>
+        </v-expansion-panel> -->
         <v-expansion-panel>
           <v-expansion-panel-header class="text-subtitle-2"
             >Get the most up to date version with Git</v-expansion-panel-header
