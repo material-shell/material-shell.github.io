@@ -22,22 +22,30 @@
         >
       </v-card-actions>
     </v-card>
-    <v-card class="d-flex flex-column" style="background-color: #003e51">
+    <v-card
+      class="d-flex flex-column"
+      style="background-color: #003e51"
+      link
+      href="https://get.trbu.app"
+    >
       <v-card-title class="d-flex flex-nowrap" style="word-break: initial">
         <span>Discover my other project</span>
       </v-card-title>
-      <v-card-text class="flex-grow-1 d-flex flex-column">
+      <v-card-text
+        class="flex-grow-1 d-flex flex-column align-center justify-center"
+      >
         <img
           src="https://get.trbu.app/assets/logo_horizontal.svg"
           alt="Discover Tribu"
-          style="max-width: 100%"
+          style="max-width: 80%"
         />
       </v-card-text>
       <v-card-actions>
         <v-btn
           link
           href="https://get.trbu.app"
-          class="flex lighten-1"
+          class="flex"
+          style="background-color: rgba(255, 255, 255, 0.1)"
           raised
           text
           >Take a look</v-btn
