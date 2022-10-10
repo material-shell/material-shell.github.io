@@ -10,7 +10,7 @@
           recent
           <a href="https://wiki.gnome.org/Projects/GnomeShell">GNOME Shell</a>
           installed </strong
-        >. (At least 3.34+)
+        >. (At least 40+)
       </span>
     </v-card-title>
 
